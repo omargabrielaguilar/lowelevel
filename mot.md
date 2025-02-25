@@ -61,3 +61,48 @@ This expression creates a variable of type type, which has the name name, and co
 int personID = 1;
 
 This code creates a variable whose type is an integer, and name is personID. It's extremely important to give our variables meaningful names so we know what they do. Otherwise, when we go back to read our code, or god forbid someone ELSE reads our code, we'll have no idea what our code is doing.
+
+
+Variable Scope Rules
+What is scope?
+Scope is a region in a program that is able to access a particular variable or set of variables in memory.
+
+Why do I need to know about scope?
+Variable scope in C affects what parts of the code can access our variables, and will eventually inform how we structure our program.
+
+How does variable scope work in C?
+In C, there are two primary types of scope. Local and Global scope.
+
+Local Scope
+Local Scope is defined by the region inside of the parenthesis of a function, and defines where the program can access variables. For example, here we define a variable called personID. Because personID is declared within main, personID can later be modified in that function. The variable is "in scope."
+
+int main()
+{
+    int personID = 0;
+    personID += 1;
+}
+
+With a functions local scope, we can also create regions of sub-scope where we can create additional variables that cannot be affected by the outside scope.
+
+int main()
+{
+    int personID = 0;
+    personID += 1;
+    {
+        // this will not affect the other personID
+        int personID = 0;
+    }
+}
+
+Global Scope
+When a variable is declared outside of the confines of a function, all regions of code can touch that variable. Because everyone can access it, that variable is in global scope.
+
+int g_NumPersons = 0;
+
+int main()
+{
+    int personID = 0;
+    personID += 1;
+}
+
+Here, g_NumPersons is in global scope. This is generally accepted as bad practice, because tracking the logic used in this variable against all lines of code is hard to do, and can lead to logic errors
