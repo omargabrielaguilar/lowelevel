@@ -6,6 +6,7 @@ But, C also gives you the ability to shoot yourself in the foot. When you make a
 ... so why bother?
 While learning C is difficult, the language will make it easier to learn other languages. Having an understand at such a low level of how the computer works will make learning other languages like Python and Javascript SO much easier.
 
+-------------------------------------------------------- |||| --------------------------------------------------------------- ||||
 C is a language that is unlike many other languages. C does not have a garbage collector, or a live runtime, or really anything going on versus exactly what you tell it to do.
 
 Interpreted vs Compiled
@@ -16,3 +17,13 @@ Unlike languages like Go that depend on live garbage collection to clean up memo
 
 Strong vs Weak Typing
 While the answer to this is generally a holy war, C is a weakly typed language. While the types of the language are defined at compile time, the actual type can be converted later on in the code through type casting. Because the types are not enforced by the compiler throughout the life of the source code, the language is considered to be weakly typed.
+
+python interpreter language =>   machine code =>   interpreter  for something else
+c is interpereter for cpu  compiler
+java with jvm (machine code)
+
+c => no garbage collector is a win (learn to be a psy destroyer jeje)  programming responsible to memory leak  , c is memory safe language? no necc...,  no violate buffer memory
+------------------------------------------------||||| ---------------------------------------------------------
+
+
+c is easy to access whatever you want.
