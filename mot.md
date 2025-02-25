@@ -24,6 +24,40 @@ java with jvm (machine code)
 
 c => no garbage collector is a win (learn to be a psy destroyer jeje)  programming responsible to memory leak  , c is memory safe language? no necc...,  no violate buffer memory
 ------------------------------------------------||||| ---------------------------------------------------------
-
-
 c is easy to access whatever you want.
+
+Is C Still Relevant in Today's World?
+...yes. Next question.   like antirez be a c programming linux dev
+
+Just Kidding
+But seriously, yes, C is still an extremely relevant language and shows no signs of going away any time soon, despite the language being over 50 years old. The language has stood the test of time because of the power and performance the language brings to the developer fairly simply.
+
+BUT WHAT ABOUT RUST?!
+Yes, we all understand that there are other languages that are gaining more and more traction every day. But, this doesn't mean C is going away. There is still C in the operating system you're using, the browser you're in, your router, your microwave. There is C LITERALLY EVERYWHERE.
+
+$$$$
+Also don't forget, even if the language is old, there's money to be made in languages that don't get a lot of love. Looking at you COBOL....
+
+
+php - c#
+c     =>  golang (100k) singapore || korean || europe
+
+
+works hard as fuck
+Introduction to Variables
+What is a variable?
+Variables are locations in memory used in programming languages to hold information relevant to the program, to eventually be displayed to the user or impact the control flow of the program.
+
+Why do I need variables?
+Lets take for example the project for this course, our employee database. Any information that we want to store about the employee will have to be stored in a variable. This is unavoidable.
+
+How do variables in C work?
+In C, all variables are declared in the following piece of code, known as a declaration.
+
+type name = initial value;
+
+This expression creates a variable of type type, which has the name name, and contains the value initial value. The type will be used to describe what type of information is in that variable. For example, an int is used to store numbers. We will discuss additional variable types in other lessons.
+
+int personID = 1;
+
+This code creates a variable whose type is an integer, and name is personID. It's extremely important to give our variables meaningful names so we know what they do. Otherwise, when we go back to read our code, or god forbid someone ELSE reads our code, we'll have no idea what our code is doing.
