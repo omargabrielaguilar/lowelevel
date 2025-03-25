@@ -1,9 +1,21 @@
 #include <stdio.h>
 
-int main()
+// GLOBAL SCOPE
+int g_NumPersons = 0;
+
+void some_other_functions()
 {
-    //   type name = initial value;   forma de declarar una variable
-    int age = 3;
-    int personID = 0;
-    int person2ID = personID + 1;
+    int personaID = 1;
+}
+
+int main() 
+{
+    //type name = initial value
+    int personaID = 0;
+
+    personaID += 1;
+    {
+        int personaID = 0;
+        personaID += 2;
+    }
 }
